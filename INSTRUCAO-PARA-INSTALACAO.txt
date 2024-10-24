@@ -1,0 +1,54 @@
+***** UTILIZE O PHP 7.4
+
+
+Recomendo usar a hostgator ou hostinger como empresa para hospedagem... 
+Pois são as mais conhecidas e onde foram feito todos os tetes...
+
+1 Subir zip pelo gerenciador de arquivos da sua hospedagem para dentro da pasta public_html ou subdominio
+
+2 Extrair zip dentro da pasta em que subiu
+
+3 criar um banco de dados, usuario e senha, dar todas permissões ao usuario 
+
+4 Abrir o phpmyadmin e importar o banco de dados que se encontra na pasta BANCO-DE-DADOS-SQL para dentro do banco criado
+
+5 alterar dados de conexão com o banco e Configurações de E-mail em _app/Config.inc.php
+
+// CONFIGRAÇÕES DO BANCO ####################
+define('HOST', 'localhost');
+define('USER', 'usuario');     // Aqui e o usuário do banco
+define('PASS'senha');         // Aqui e a senha do usuário
+define('DBSA', 'nome_banco'); // Aqui e o nome do banco de dados
+// CONFIGRAÇÕES DO BANCO ####################
+
+define("EMAIL_MSG","seuemail@gmail.com"); //Email para recebimento e envio de mensagens
+define("PHONE_NUMBER","41000000000"); //Telefone para chamarem no whats
+
+
+6 ainda no mesmo arquivo, alterar tambem o link de acesso:
+
+define('HOME', 'http://seusite.com/'); // Aqui e o endereço do seu site - OBSERVAÇÃO: "SEMPRE COM A BARRA NA FRENTE E DENTRO DAS ASPAS SIMPLES" 
+
+OBS: Digite o endereço do seu site sem WWW , somente https://seusite.com/
+
+PRONTO! Já PODE ACESSAR SEU SITE!
+
+
+Credenciais para a conta Demo:
+-----------------------------
+LOGIN: admin@admin.com
+SENHA: mudar1010
+
+seusite.com/login
+depois que entrar se quiser pode alterar o login e senha.
+
+
+Credenciais para a conta ADMIN:
+-----------------------------
+EMAIL: admin@admin.com
+SENHA: mudar1010
+
+seussite.com/admin  =  para acessar a area administrativa use as mesmas credenciais acima... dentro do sistema e so alterar.
+
+OBSERVAÇÃO: O restante das configurações você pode fazer acessando o arquivo dentro de: _app/textos.config.php - Para alteração de textos do frontend da loja.
+

@@ -1,0 +1,7 @@
+
+
+Para alterar a landingpage principal basta abrir o arquivo index.php e alterar a linha 1 
+require('landingpage2.php');
+
+no lugar de landingpage2 você mudar para o nome da landingpage que quer usar ex: landingpage.php ou landingpage3.php
+
